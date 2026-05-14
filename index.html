@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <button id="toggleTheme">Перемкнути режим</button>
+
+    <main>
+        <h1>Лесько Вероніка Богданівна</h1>
+
+        <p class="subtitle">
+            Студентка спеціальності «Кібербезпека та захист інформації».
+            Цікавлюся вебтехнологіями, програмуванням та сучасними методами захисту даних.
+        </p>
+
+        <section class="columns">
+            <div class="column">
+                <h2>Освіта</h2>
+                <p>
+                    Навчаюся у Національному університеті «Львівська політехніка»
+                    за спеціальністю «Кібербезпека та захист інформації».
+                </p>
+            </div>
+
+            <div class="column">
+                <h2>Навички</h2>
+                <ul>
+                    <li>Базові знання HTML, CSS та JavaScript</li>
+                    <li>Робота з Python</li>
+                    <li>Основи комп’ютерних мереж</li>
+                    <li>Основи інформаційної безпеки</li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h2>Проєкти</h2>
+                <p>
+                    Навчальні лабораторні роботи з вебпрограмування,
+                    комп’ютерних мереж та кібербезпеки.
+                </p>
+
+                <h2>Мови</h2>
+                <ul>
+                    <li>Українська — рідна</li>
+                    <li>Англійська — рівень B1</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="comments">
+            <h2>Коментарі</h2>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <form class="feedback-form" action="https://formspree.io/f/mvzljzpj" method="POST">
+            <h2>Форма зворотного зв’язку</h2>
+
+            <input type="text" name="name" placeholder="Ім’я" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Телефон" required>
+            <textarea name="message" placeholder="Ваше повідомлення" required></textarea>
+
+            <button type="submit">Відправити</button>
+        </form>
+    </div>
+
+    <footer>
+        <h2>Контакти</h2>
+
+        <p>Email: veronika.lesko.kb.2024@lpnu.ua</p>
+        <p>Телефон: +380XXXXXXXXX</p>
+
+        <p id="systemInfo"></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
